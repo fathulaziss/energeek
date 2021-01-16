@@ -3,10 +3,6 @@ import 'dart:math';
 import 'package:energeek/models/models.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:supercharged/supercharged.dart';
 import 'package:intl/intl.dart';
 
-part 'main_page.dart';
-part 'konfirmasi_page.dart';
-part 'success_transaksi_page.dart';
-part 'history_transaksi_page.dart';
+part 'product_card.dart';
