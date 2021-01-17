@@ -26,13 +26,18 @@ class _KonfirmasiPageState extends State<KonfirmasiPage> {
                 color: Colors.white,
                 child: Row(
                   children: [
-                    Container(
-                      width: 24,
-                      height: 24,
-                      margin: EdgeInsets.only(right: 24),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("assets/back_arrow.png"),
+                    GestureDetector(
+                      onTap: () {
+                        Get.back();
+                      },
+                      child: Container(
+                        width: 24,
+                        height: 24,
+                        margin: EdgeInsets.only(right: 24),
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage("assets/back_arrow.png"),
+                          ),
                         ),
                       ),
                     ),
@@ -67,13 +72,13 @@ class _KonfirmasiPageState extends State<KonfirmasiPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    widget.transaction.product.name,
+                                    widget.transaction.product.nama,
                                     style: GoogleFonts.poppins(
                                         fontSize: 14,
                                         fontWeight: FontWeight.w500),
                                   ),
                                   Text(
-                                    widget.transaction.product.price
+                                    widget.transaction.product.harga
                                             .toString() +
                                         " * " +
                                         widget.transaction.quantity.toString(),

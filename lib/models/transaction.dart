@@ -24,21 +24,21 @@ List<Transaction> mockTransactions = [
     id: 1,
     product: mockProducts[1],
     quantity: 10,
-    total: mockProducts[1].price * 10,
+    total: mockProducts[1].harga * 10,
     dateTime: DateTime.now(),
   ),
   Transaction(
     id: 2,
     product: mockProducts[2],
     quantity: 7,
-    total: mockProducts[2].price * 7,
+    total: mockProducts[2].harga * 7,
     dateTime: DateTime.now(),
   ),
   Transaction(
     id: 3,
     product: mockProducts[3],
     quantity: 5,
-    total: mockProducts[3].price * 5,
+    total: mockProducts[3].harga * 5,
     dateTime: DateTime.now(),
   )
 ];
